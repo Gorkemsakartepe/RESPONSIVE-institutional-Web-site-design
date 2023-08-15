@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTER</title>
+  <script src="js/searchbox.js"></script>
+  <link rel="stylesheet" href="css/kurumsal.css">
+  <link href="css/bootstrap.css" rel="stylesheet" />
+
+  <script>
+    $(document).ready(function () {
+
+      var setState = function () {
+        if (length > yPos && width > xPos) {
+          //use the fixed sidebar state
+          $('#sidebar-fluid').hide();
+          $('#sidebar-fixed').show();
+        } else {
+          //use the fluid sidebar state
+          $('#sidebar-fluid').show();
+          $('#sidebar-fixed').hide();
+        }
+      }
+
+      var xPos = 683;
+      var yPos = 240;
+
+      var length = $(window).scrollTop();
+      var width = $(window).width();
+
+      $(window).scroll(function (event) {
+        length = $(window).scrollTop();
+        setState();
+      });
+
+      $(window).resize(function () {
+        width = $(window).width();
+        setState();
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container1">
+      <div class="header-main">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.svg"></a>
+        </div>
+        <div class="open-nav-menu">
+          <span></span>
+        </div>
+        <div class="menu-overlay">
+        </div>
+        <!-- navigation menu start -->
+        <nav class="nav-menu">
+          <div class="close-nav-menu">
+            <img src="images/close.svg" alt="close">
+          </div>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="index.html">ANASAYFA</a>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a href="kurumsal.html" data-toggle="sub-menu">KURUMSAL <i class="plus"></i></a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="kurumsal.html">HAKKIMIZDA</a></li>
+                <li class="menu-item"><a href="kalite.html">KALİTE</a></li>
+                <li class="menu-item"><a href="kvkk.html">KİŞİSEL VERİLERİN KORUNMASI KANUNU</a></li>
+                <li class="menu-item"><a href="yetenek.html">YETENEKLERİMİZ</a></li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a href="hizmetler.html" data-toggle="sub-menu">HİZMETLERİMİZ <i class="plus"></i></a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="bilgiservisleri.html">BİLGİ SERVİSLERİ</a></li>
+                <li class="menu-item"><a href="toplusms.html">TOPLU SMS</a></li>
+                <li class="menu-item"><a href="özelcözümler.html">ÖZEL ÇÖZÜMLER</a></li>
+                <li class="menu-item"><a href="mobilogren.html">MOBİLÖĞREN</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="iys.html">İYS</a>
+            </li>
+            <li class="menu-item">
+              <a href="marka.html">MARKALARIMIZ</a>
+            </li>
+            <li class="menu-item">
+              <a href="referans.html">REFERANSLAR</a>
+            </li>
+            <li class="menu-item">
+              <a href="haber.html">HABERLER</a>
+            </li>
+            <li class="menu-item">
+              <a href="kariyer.html">KARİYER</a>
+            </li>
+            <li class="menu-item">
+              <a href="iletisim.html">İLETİŞİM</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navigation menu end -->
+      </div>
+    </div>
+    <script src="/js/script.js"></script>
+  </header>
+
+  <hr class="hr-top" />
+
+  <div class="container">
+    <div class="row">
+      <div class="three columns">
+        <aside>
+          <div id="sidebar-fluid">
+            <div class="panel-heading">KURUMSAL</div>
+            <ul>
+              <li><a href="kurumsal.html">Hakkımızda</a></li>
+              <li><a href="kalite.html">Kalite</a></li>
+              <li><a href="kvkk.html">Kişisel Verilerin Korunması<br> Kanunu</a></li>
+              <li><a href="yetenek.html">Yeteneklerimiz</a></li>
+            </ul>
+          </div>
+          <div id="sidebar-fixed">
+            <div class="panel-heading">KURUMSAL</div>
+            <ul>
+              <li><a href="kurumsal.html">Hakkımızda</a></li>
+              <li><a href="kalite.html">Kalite</a></li>
+              <li><a href="kvkk.html">Kişisel Verilerin Korunması<br> Kanunu</a></li>
+              <li><a href="yetenek.html">Yeteneklerimiz</a></li>
+            </ul>
+          </div>
+
+          <span id="placeholder">&nbsp;</span>
+
+        </aside>
+      </div>
+
+      <div class="nine columns">
+        <main>
+          <h1>KİŞİSEL VERİLERİN KORUNMASI KANUNU</h1>
+          <p>
+            Hizmet verilen kuruluşlar, kullanıcı ve abonelerin kişisel verisinin korunması Ester / Mobilöğren'in temel
+            değeridir.
+          </p>
+          <p>
+            Başta özel hayatın gizliliği olmak üzere, temel hak ve özgürlüklerin korunması amacıyla, kişisel verilerle
+            ilgili düzenlenen "Kişisel Verilerin Korunması Kanunu" hususunda sizi bilgilendirmek istiyoruz.
+          </p>
+          <p>
+            6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) açısından "Kişisel Veri"; Gerçek kişiye ilişkin,
+            kimliği belirleyen veya kimliği belirlemekte kullanılabilen her türlü bilgiyi ifade eder.
+          </p>
+          <p>
+            Bilgileriniz aşağıda belirtilen kapsam çerçevesinde işlenmektedir.
+          </p>
+          <p>
+            <strong>Kişisel Verilerin İşlenmesi ve İşlenme Amaçları</strong>
+          </p>
+          <p>
+            KVKK madde 4 uyarınca;<br>
+
+            "(1) Kişisel veriler, ancak bu Kanunda ve diğer kanunlarda öngörülen usul ve esaslara uygun olarak
+            işlenebilir.<br>
+
+            (2) Kişisel verilerin işlenmesinde aşağıdaki ilkelere uyulması zorunludur:<br>
+
+            a) Hukuka ve dürüstlük kurallarına uygun olma.<br>
+
+            b) Doğru ve gerektiğinde güncel olma.<br>
+
+            c) Belirli, açık ve meşru amaçlar için işlenme.<br>
+
+            ç) İşlendikleri amaçla bağlantılı, sınırlı ve ölçülü olma.<br>
+
+            d) İlgili mevzuatta öngörülen veya işlendikleri amaç için gerekli olan süre kadar muhafaza edilme."<br>
+          </p>
+          <p>
+            Kişisel verileriniz; Ester tarafından sağlanan ya da aracısı olunan ürün ve hizmetlerinin sunulabilmesi,
+            mevzuatta ve sözleşmelerde belirtilen yükümlülüklerin ifa edilebilmesi, işlem yapanın/yaptıranın kimliğinin
+            tespit edilebilmesi, elektronik ortamda veya basılı olarak kayıt ve belge düzenlenebilmesi, mevzuatta
+            öngörülen bilgi saklama, raporlama, bilgilendirme yükümlülüklerinin yerine getirilebilmesi, düzenleyici ya
+            da denetleyici kuruluşların denetimlerinde ihtiyaç duyulan bilgi setinin sunulabilmesi, strateji, planlama,
+            iş geliştirme faaliyetleri için analiz edilmesi, müşteri hizmetleri faaliyetlerinin yerine getirilmesi
+            amacıyla işlenebilecek, sistemlerde ve arşivlerde muhafaza edilebilecektir.
+          </p>
+          <p>
+            <strong>Kişisel Verilerin Toplanma Yöntemi</strong>
+          </p>
+          <p>
+            Yukarıda belirtilen amaçlarla kişisel veriler; Sayısal kanallar başta olmak üzere Ester'in hizmet verdiği ve
+            kullanıcılara ürün kullandırdığı tüm kanallar aracılığıyla sözlü, yazılı veya elektronik ortamda, tamamen
+            veya kısmen otomatik olan ya da herhangi bir veri kayıt sisteminin parçası olarak otomatik olmayan, yurt
+            içi/yurt dışı iştirakleri, işbirliği yapılan program ortağı kurum ve kuruluşlar, resmi kurumlar ve diğer
+            3.kişiler de dahil olmak üzere çeşitli yöntemlerle toplanabilecektir.
+          </p>
+          <p>
+            <strong>Kişisel Verilerin Aktarılması</strong>
+          </p>
+          <p>
+            Kişisel verileriniz, Kanunlar ve sair mevzuat kapsamında ve açıklanan amaçlarla;
+
+            Düzenleyici ve denetleyici kurumlarla, acil çağrı halinde konumunuzu tespit edecek olan yetkili merciler,
+            kişisel verilerinizi tabi olduğu kanunlarında açıkça talep etmeye yetkili olan kamu kurum veya kuruluşları,
+
+            Belirtilen amaçlar kapsamında iş ortaklıkları, tedarikçi ve yüklenici şirketler ve sair gerçek veya tüzel
+            kişiler
+
+            Vergi ve benzeri danışmanlar, yasal takip süreçleri ile ilgili zorunlu kişiler, kurum ve kuruluşlar ve
+            denetimciler de dâhil olmak üzere danışmanlık aldığımız üçüncü kişiler ile ve bunlarla sınırlı olmaksızın,
+            yurt içinde ve yurt dışında, yukarıda belirtilen amaçlarla iş ortakları, hizmet alınan üçüncü kişi,
+            yetkilendirilen kişi ve kuruluşlara aktarılabilecektir.
+          </p>
+          <p>
+            <strong>Kişisel Verilerin Saklanması ve Güvenliği</strong>
+          </p>
+          <p>
+            Kişisel veriler, bu bilgileri verme amacı geçerli olduğu sürece saklanacaktır. İhtiyaçlarınızın
+            belirlenmesi, size daha çabuk hizmet verilmesi ve sonraki hizmet taleplerinizin karşılanması amacıyla,
+            bizden aldığınız hizmetten sonra da verileriniz tarafımızdan işlenmeye devam edilecektir. Veriler, yasal
+            sürelere tabi olarak ve yasal merciler ile ilgili kamu otoritelerine raporlama, bilgilendirme amaçları için
+            tutulması veya mevzuat uyarınca daha uzun sürelerle saklanması gerekiyorsa bu sınırlara uyulacaktır.
+            Saklanan, kaydedilen verilerin kaybolmaması, yetkisiz kişilerin eline geçmemesi ve hukuka aykırı
+            kullanımların önlenmesi için gerekli güvenlik önlemleri tarafımızdan alınacaktır.
+          </p>
+          <p>
+            <strong>Kişisel Verilerin İşlenmesine Dair Haklarınız</strong>
+          </p>
+          <p>
+            Şirketimize başvurmak suretiyle KVKK 11. Maddesi uyarınca;<br>
+
+            (1) Herkes, veri sorumlusuna başvurarak kendisiyle ilgili;<br>
+
+            a) Kişisel veri işlenip işlenmediğini öğrenme,<br>
+
+            b) Kişisel verileri işlenmişse buna ilişkin bilgi talep etme,<br>
+
+            c) Kişisel verilerin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,<br>
+
+            d) Yurt içinde veya yurt dışında kişisel verilerin aktarıldığı üçüncü kişileri bilme,<br>
+
+            e) Kişisel verilerin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme,<br>
+
+            f) Tanımlanan şartlar çerçevesinde kişisel verilerin silinmesini veya yok edilmesini isteme,<br>
+
+            g) E ve f bentleri uyarınca yapılan işlemlerin, kişisel verilerin aktarıldığı üçüncü kişilere
+            bildirilmesini<br>
+            isteme,
+
+            h) İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kişinin kendisi
+            aleyhine bir sonucun ortaya çıkmasına itiraz etme,<br>
+
+            i) Kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğraması hâlinde zararın giderilmesini
+            talep etme, haklarına sahiptir.<br>
+          </p>
+          <p>
+            <strong>Diğer Bilgiler</strong>
+          </p>
+          <p>
+            Ester, mevzuat ve etik değerleri kapsamında kalmak üzere gizlilik politikasını değiştirme hakkını elinde
+            tutar. Gizlilik politikası bu adres sürüm numaraları ile ifade edilecek şekilde yayınlanır.<br>
+            <br>
+            Ester / Mobilöğren olarak, kişisel verinizin güvenliğine azami önemi verdiğimizi bilgilerinize sunar;
+            kişisel veriniz ile ilgili başvurularınızı; Büyükdere Mah. Gençlik Bulvarı Osmangazi Üni. Meşelik Kampüsü
+            ETGB - Osmangazi Teknopark 4/59 Z4 Odunpazarı, Eskişehir adresine yazılı olarak ve doğrulanabilir bir
+            şekilde (Noter, iadeli taahhütlü posta vb.) iletebileceğinizi belirtmek isteriz<br>
+            <br>
+            <em>Saygılarımızla</em>
+          </p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!--Start Footer-->
+  <section class="footer-section">
+    <div class="container3">
+      <div class="row2">
+        <div class="col" id="company">
+          <img src="images/footer-icon.svg" alt="" class="logo">
+          <p class="footer-title">
+            ESTER © 2019
+          </p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3>Adres</h3>
+          <p class="adres">Büyükdere Mah. Prof. Dr. Nabi Avcı Bulvarı Osmangazi Üni.<br> Meşelik Kampüsü ETGB -
+            Osmangazi Teknopark
+            4/59 Z3-<br>Z4-Z5, 26040 Odunpazarı Eskişehir</p>
+        </div>
+
+        <div class="col" id="services">
+          <h3>POLİTİKALARIMIZ</h3>
+          <div class="links">
+            <a href="#">Bilgi Güvenliği Politikası</a>
+            <a href="#">Kişisel Verilerin Korunması Kanunu</a>
+            <a href="#">İleti Yönetim Sistemi</a>
+          </div>
+        </div>
+
+        <div class="col" id="contact">
+          <h3>İLETİŞİM</h3>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>Faks: 0 (222) 236 13 16</p>
+          </div>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>Tel: 0 (222) 236 13 10</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Footer-->
+
+
+
+
+
+</body>
+
+</html>

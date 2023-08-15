@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTER</title>
+  <script src="js/searchbox.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <link rel="stylesheet" href="css/hizmetler.css">
+  <link href="css/bootstrap.css" rel="stylesheet" />
+
+  <script>
+    $(document).ready(function () {
+
+      var setState = function () {
+        if (length > yPos && width > xPos) {
+          //use the fixed sidebar state
+          $('#sidebar-fluid').hide();
+          $('#sidebar-fixed').show();
+        } else {
+          //use the fluid sidebar state
+          $('#sidebar-fluid').show();
+          $('#sidebar-fixed').hide();
+        }
+      }
+
+      var xPos = 683;
+      var yPos = 240;
+
+      var length = $(window).scrollTop();
+      var width = $(window).width();
+
+      $(window).scroll(function (event) {
+        length = $(window).scrollTop();
+        setState();
+      });
+
+      $(window).resize(function () {
+        width = $(window).width();
+        setState();
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container1">
+      <div class="header-main">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.svg"></a>
+        </div>
+        <div class="open-nav-menu">
+          <span></span>
+        </div>
+        <div class="menu-overlay">
+        </div>
+        <!-- navigation menu start -->
+        <nav class="nav-menu">
+          <div class="close-nav-menu">
+            <img src="images/close.svg" alt="close">
+          </div>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="index.html">ANASAYFA</a>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a href="kurumsal.html" data-toggle="sub-menu">KURUMSAL <i class="plus"></i></a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="kurumsal.html">HAKKIMIZDA</a></li>
+                <li class="menu-item"><a href="kalite.html">KALİTE</a></li>
+                <li class="menu-item"><a href="kvkk.html">KİŞİSEL VERİLERİN KORUNMASI KANUNU</a></li>
+                <li class="menu-item"><a href="yetenek.html">YETENEKLERİMİZ</a></li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a href="hizmetler.html" data-toggle="sub-menu">HİZMETLERİMİZ <i class="plus"></i></a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="bilgiservisleri.html">BİLGİ SERVİSLERİ</a></li>
+                <li class="menu-item"><a href="toplusms.html">TOPLU SMS</a></li>
+                <li class="menu-item"><a href="özelcözümler.html">ÖZEL ÇÖZÜMLER</a></li>
+                <li class="menu-item"><a href="mobilogren.html">MOBİLÖĞREN</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="iys.html">İYS</a>
+            </li>
+            <li class="menu-item">
+              <a href="marka.html">MARKALARIMIZ</a>
+            </li>
+            <li class="menu-item">
+              <a href="referans.html">REFERANSLAR</a>
+            </li>
+            <li class="menu-item">
+              <a href="haber.html">HABERLER</a>
+            </li>
+            <li class="menu-item">
+              <a href="kariyer.html">KARİYER</a>
+            </li>
+            <li class="menu-item">
+              <a href="iletisim.html">İLETİŞİM</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navigation menu end -->
+      </div>
+    </div>
+    <script src="/js/script.js"></script>
+  </header>
+
+  <hr class="hr-top" />
+
+  <div class="container">
+    <div class="row">
+      <div class="three columns">
+        <aside>
+          <div id="sidebar-fluid">
+            <ul>
+              <li><a href="bilgiservisleri.html">BİLGİ SERVİSLERİ</a></li>
+              <li><a href="toplusms.html">TOPLU SMS</a></li>
+              <li><a href="özelcözümler.html">ÖZEL ÇÖZÜMLER</a></li>
+              <li><a href="mobilogren.html">MOBİLÖĞREN</a></li>
+            </ul>
+          </div>
+          <div id="sidebar-fixed">
+            <div class="panel-heading">KURUMSAL</div>
+            <ul>
+              <li><a href="bilgiservisleri.html">BİLGİ SERVİSLERİ</a></li>
+              <li><a href="toplusms.html">TOPLU SMS</a></li>
+              <li><a href="özelcözümler.html">ÖZEL ÇÖZÜMLER</a></li>
+              <li><a href="mobilogren.html">MOBİLÖĞREN</a></li>
+            </ul>
+          </div>
+
+          <span id="placeholder">,</span>
+
+        </aside>
+      </div>
+
+      <div class="nine columns">
+        <main>
+          <h1>BİLGİ SERVİSLERİ</h1>
+          <p>
+            Konusunda Türkiye'nin en eski markası ve deneyimli ekibine sahip Ester'in işlettiği servislere tüm GSM
+            operatörleri üzerinden ulaşabilirsiniz.
+          </p>
+          <p>
+            Bu güne kadar yedi milyondan fazla GSM abonesine bilgi servisi hizmeti vermiş olan Ester'in hazırladığı
+            Mobil Bilgi Servisleri ile müşterilerinize ilgili oldukları bilgileri ulaştırabilir ve etkinliğinizi
+            arttırabilirsiniz.
+          </p>
+          <p>
+            Mobil bilgi servisleri, ücretlendirmenin aboneye yansıtıldığı ve senaryoya göre bilgi başına, haftalık ya da
+            aylık periyotlarda ücretlendirilen servislerdir. Ester tarafından hazırlanan bilgi servisleri; güvenlik,
+            güvenilirlik ve yüksek performans için tasarlanır.
+          </p>
+          <p>
+            Ester tarafından geliştirilen servisler; etik değerlere,TCK mevzuatına, BTK ve GSM Operatörlerinin
+            kurallarına uygun olarak tasarlanır ve işletilir. Büyük miktarda verinin işlendiği, kompleks ve sorumluluk
+            gerektiren servislerin geliştirilmesi ve işletimi; konusunda uzman Ester geliştirme ve operasyon ekiplerince
+            gerçekleştirilir.
+          </p>
+          <p>
+            Ester Bilgi Servisleri Mobimate ™ platformu üzerinde geliştirilir ve;
+          </p>
+          <p>
+            •&nbsp;Bilgi güvenliği riskleri değerlendirilir ve kişisel bilgiler anlamlı bir bütün oluşturmayacak şekilde
+            bulanıklaştırılarak kullanılır.<br>
+            •&nbsp;Abonelerden yapılan tahsilatların mükemmel bir doğruluk oranı ile gerçekleşebilmesi için her türlü
+            tasarım ve işletim önlemi alınır.<br>
+            •&nbsp;Aynı anda yüzbinlerce aboneye hizmet verebilmek için ölçeklenebilir bir şekilde hazırlanır.<br>
+          </p>
+          <p>
+            Ester iş birliği ile;
+          </p>
+          <p>
+            •&nbsp;Kuruluşunuzun mobil uygulamaları ve SMS bilgi servisleri birlikte geliştirilebilir, birlikte uyum
+            içerisinde çalışmaları sağlanabilir.<br>
+            •&nbsp;Kişisel bilgi güvenliği ve veri güvenliği ön planda tutulmuş ürünlere sahip olunur.<br>
+            •&nbsp;İsteğe bağlı olarak Müşteri Hizmetleri desteği 40 hatlı sayısal IVR sistemi ve Müşteri Hizmetleri
+            Operatörleri üzerinden verilebilir,<br> gerektiğinde kapasite artışına gidilebilir.<br>
+            •&nbsp;İsteğe bağlı olarak geliştirilen servisler maksimum işletim kalitesinin sağlanması için Ester
+            sunucuları üzerinde konaklatılır ve Ester<br> Operasyon birimi tarafından işletilir.<br>
+            •&nbsp;Değişen kurallar ve ihtiyaçlar doğrultusunda servislerin en hızlı şekilde uyumu sağlanır.<br>
+            •&nbsp;İsteğe bağlı olarak ve gerekli olduğu hallerde, kurumunuzun bilgi sistemi üzerindeki entegrasyon
+            çalışmaları Ester geliştirme ekibi<br> tarafından sağlanır.<br>
+          </p>
+          <p>
+            Hizmet ettiğiniz kesim ya da projeniz ne kadar büyük ve karmaşık olursa olsun Ester kalitesine
+            güvenebilirsiniz. İmkanları öğrenmek için Ester ile iletişime geçiniz.
+          </p>
+          <p>
+            <a class="mobilogren" style="color: rgb(255, 0, 0);" href="https://www.mobilogren.net/">MOBİLÖĞREN</a>
+          </p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!--Start Footer-->
+  <section class="footer-section">
+    <div class="container3">
+      <div class="row2">
+        <div class="col" id="company">
+          <img src="images/footer-icon.svg" alt="" class="logo">
+          <p class="footer-title">
+            ESTER © 2019
+          </p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3>Adres</h3>
+          <p class="adres">Büyükdere Mah. Prof. Dr. Nabi Avcı Bulvarı Osmangazi Üni.<br> Meşelik Kampüsü ETGB -
+            Osmangazi Teknopark
+            4/59 Z3-<br>Z4-Z5, 26040 Odunpazarı Eskişehir</p>
+        </div>
+
+        <div class="col" id="services">
+          <h3>POLİTİKALARIMIZ</h3>
+          <div class="links">
+            <a href="#">Bilgi Güvenliği Politikası</a>
+            <a href="#">Kişisel Verilerin Korunması Kanunu</a>
+            <a href="#">İleti Yönetim Sistemi</a>
+          </div>
+        </div>
+
+        <div class="col" id="contact">
+          <h3>İLETİŞİM</h3>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>Faks: 0 (222) 236 13 16</p>
+          </div>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>Tel: 0 (222) 236 13 10</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Footer-->
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTER</title>
+  <script src="js/searchbox.js"></script>
+  <link rel="stylesheet" href="css/kurumsal.css">
+
+  <script>
+    $(document).ready(function () {
+
+      var setState = function () {
+        if (length > yPos && width > xPos) {
+          //use the fixed sidebar state
+          $('#sidebar-fluid').hide();
+          $('#sidebar-fixed').show();
+        } else {
+          //use the fluid sidebar state
+          $('#sidebar-fluid').show();
+          $('#sidebar-fixed').hide();
+        }
+      }
+
+      var xPos = 683;
+      var yPos = 240;
+
+      var length = $(window).scrollTop();
+      var width = $(window).width();
+
+      $(window).scroll(function (event) {
+        length = $(window).scrollTop();
+        setState();
+      });
+
+      $(window).resize(function () {
+        width = $(window).width();
+        setState();
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container1">
+      <div class="header-main">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.svg"></a>
+        </div>
+        <div class="open-nav-menu">
+          <span></span>
+        </div>
+        <div class="menu-overlay">
+        </div>
+        <!-- navigation menu start -->
+        <nav class="nav-menu">
+          <div class="close-nav-menu">
+            <img src="images/close.svg" alt="close">
+          </div>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="index.html">ANASAYFA</a>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a href="kurumsal.html" data-toggle="sub-menu">KURUMSAL <i class="plus"></i></a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="kurumsal.html">HAKKIMIZDA</a></li>
+                <li class="menu-item"><a href="kalite.html">KALİTE</a></li>
+                <li class="menu-item"><a href="kvkk.html">KİŞİSEL VERİLERİN KORUNMASI KANUNU</a></li>
+                <li class="menu-item"><a href="yetenek.html">YETENEKLERİMİZ</a></li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a href="hizmetler.html" data-toggle="sub-menu">HİZMETLERİMİZ <i class="plus"></i></a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="bilgiservisleri.html">BİLGİ SERVİSLERİ</a></li>
+                <li class="menu-item"><a href="toplusms.html">TOPLU SMS</a></li>
+                <li class="menu-item"><a href="özelcözümler.html">ÖZEL ÇÖZÜMLER</a></li>
+                <li class="menu-item"><a href="mobilogren.html">MOBİLÖĞREN</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="iys.html">İYS</a>
+            </li>
+            <li class="menu-item">
+              <a href="marka.html">MARKALARIMIZ</a>
+            </li>
+            <li class="menu-item">
+              <a href="referans.html">REFERANSLAR</a>
+            </li>
+            <li class="menu-item">
+              <a href="haber.html">HABERLER</a>
+            </li>
+            <li class="menu-item">
+              <a href="kariyer.html">KARİYER</a>
+            </li>
+            <li class="menu-item">
+              <a href="iletisim.html">İLETİŞİM</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navigation menu end -->
+      </div>
+    </div>
+    <script src="/js/script.js"></script>
+  </header>
+
+  <hr class="hr-top" />
+
+  <div class="container">
+    <div class="row">
+      <div class="three columns">
+        <aside>
+          <div id="sidebar-fluid">
+            <ul>
+              <li><a href="yetenek1.html">TÜM GSM OPERATÖRLERİNİN ÇÖZÜM ORTAĞI</a></li>
+              <li><a href="yetenek2.html">MOBİL ÇÖZÜMLER İÇİN UZMAN : ESTER</a></li>
+              <li><a href="yetenek3.html">KALİTE VE ÖLÇEKLENEBİLİRLİK</a></li>
+              <li><a href="yetenek4.html">WEB + CEP + GSM + BACK-END</a></li>
+              <li><a href="yetenek5.html">BİLGİ GÜVENLİĞİ ANLAYIŞI</a></li>
+              <li><a href="yetenek6.html">YÜKSEK İŞLETİM KALİTESİ İÇİN AYRI BİRİM : OPERASYON</a></li>
+              <li><a href="yetenek7.html">MÜŞTERİ HİZMETLERİ DESTEĞİ</a></li>
+              <li><a href="yetenek8.html">MOBİL HİZMETLER İÇİN UZMAN : MOBİMATE</a></li>
+              <li><a href="yetenek9.html">İZLEME İÇİN UZMAN : ESTER MONİTORİNG</a></li>
+            </ul>
+          </div>
+          <div id="sidebar-fixed">
+            <div class="panel-heading">KURUMSAL</div>
+            <ul>
+              <li><a href="kurumsal.html">Hakkımızda</a></li>
+              <li><a href="kalite.html">Kalite</a></li>
+              <li><a href="kvkk.html">Kişisel Verilerin Korunması<br> Kanunu</a></li>
+              <li><a href="yetenek.html">Yeteneklerimiz</a></li>
+            </ul>
+          </div>
+
+          <span id="placeholder">,</span>
+
+        </aside>
+      </div>
+
+      <div class="nine columns">
+        <main>
+          <h1>MOBİL HİZMETLER İÇİN UZMAN : MOBİMATE</h1>
+          <hr />
+          <p>
+            Mobil bilgi servislerini pratik bir şekilde geliştirmek ve operatör sistemlerinin birbirinden farklı
+            özelliklerini tek bir programlama arayüzü ile desteklemek için geliştirilen Mobimate platformu; yıllardır
+            yüksek güvenilirlik oranı ile Türkiye'nin büyük kurumlarına hizmet vermektedir.
+          </p>
+          <p>
+            Mobimate; üzerinde çalışan servislerde değişiklik gerektirmeden düzenleyici kuruluşların değişen şart ve
+            kurallarının doğrudan uygulanabildiği bir altyapı sağlamak ile birlikte; birbiri ile ilişkili olsun ya da
+            olmasın her gün milyonlarca işlemi iş kurallarına uygun olarak gerçekleştirebilmektedir.
+          </p>
+          <p>
+            <strong>Başlıca Özellikler;</strong>
+          </p>
+          <p>
+            •Dört ayrı GSM operatörünün 16 ayrı platformunu kullanabilmektedir. (Desteklenen başlıca platformlar; SMPP,
+            Turkcell Vasres, Turkcell SDP, Türk Telekom SDP, Türk Telekom PIMS, Türk Telekom LBS, Türk Telekom Kurumsal,
+            Türk Telekom Smart Ads, Türk Telekom VipSMS, Vodafone Push / Pull, Vodafone Subscription Services, Vodafone
+            CEP, Vodafone Kurumsal (VNet, XMLSMS), KKTCell <br>Columbus, KKTCell SLCM<br>
+            •Diğer taşıyıcılar (STH) ve çözüm ortaklarının sistemlerine bağlantı sağlanabilir.<br>
+            •Aynı anda sınırsız sayıda ayrı servisi çalıştırabilir.<br>
+            •SMS, Bulk (1eN) SMS, MMS, Bulk (1eN) MMS, WapPush, Bulk (1eN) WapPush, iletim bilgisi, Bulk (1eN paket)
+            iletim bilgisi, abonelik durum bilgisi, geri ödeme, model sorgusu, operatör tespiti işlemlerini
+            destekler.<br>
+            <span style="padding-left: 30px;"></span>
+            •Katma Değerli Servislerin ve Bulk SMS gönderimlerinin mesaj şablonları aracılığı ile oluşturulmasını
+            destekler<br>
+            <span style="padding-left: 30px;">
+              •Avea PIMS üzerinde üyelik mesajlarının şablonlar aracılığı ile oluşturulmasını destekler<br>
+              <span style="padding-left: 30px;"></span>
+              •Operatör sistemlerinden gelen msisdn değişiklik bilgilerini destekler<br>
+              <span style="padding-left: 30px;"></span>
+              •Gelen SMS'lerin işlenmesi için regular expressions ya da komut eşleştirme uygulayabilir, aynı kısa
+              numaradaki servisler için önceliklendirme ve dağıtım gerçekleştirebilir<br>
+
+              •Ücretsiz üyelik, iletiye bağlı ücretlendirilen üyelik, periyodik ücretlendirilen abonelik ve mikro üyelik
+              senaryolarını destekler.<br>
+              •Tekil ödeme, periyodik tahsilat, parçalı tahsilat, gecikmeli tahsilat senaryolarını destekler.<br>
+              •Herhangi bir bilgi servisini, bir ya da birden fazla operatör için çalıştırabilir.<br>
+              •Kolay servis geliştirmek için basit programlama arayüzü (API) sağlar.<br>
+              •Temel bilgi servisleri için hazır altyapı sağlar.<br>
+              •Periyodik ücretlendirilen servisler için hazır altyapı sağlar.<br>
+              •Aynı serviste her operatör için ayrı üyelik kurgusu tanımlanabilir.<br>
+              •Aynı serviste her operatör için ayrı mesaj metinleri / şablonları tanımlanabilir.<br>
+              •Aynı serviste her bir operatör için ileti ve amacına göre bağlanılacak ayrı operatör platformları
+              tanımlanabilir.<br>
+              •Abonelerin operatör geçişlerini tanımlayabilir, herhangi bir bilgi servisi için üyelik sonlandırma ve
+              yeni
+              operatörde davet oluşturma senaryolarını uygulayabilir. Herhangi bir nedenden sonlandırılan üyelikler /
+              abonelikler için farklı yeniden davet senaryolarını uygulayabilir.<br>
+              •Aboneler için ücretsiz kota tanımı yapılabilir, iletilerin ücreti kotadan düşülür ve aboneye ücretsiz
+              ulaştırılır.<br>
+              •Herhangi bir nedenden sonlandırılan üyelikler / abonelikler için yeniden davet senaryolarını
+              uygulayabilir.<br>
+              •Ağ, operatör bağlantıları ya da Ester sistemleri üzerinde oluşabilecek problemleri analiz eder ve
+              gerektiğinde yeniden gönderim deneyerek işlem başarısını arttırır.<br>
+              •Ölçeklenebilirliği temel alan asenkron mimarisi, çalışılan herhangi bir kurum ya da operatör sistemindeki
+              performans dalgalanmalarının etkisini en aza indirger.<br>
+              •Platform ve üzerinde çalışan servislere ilişkin konfigürasyon değişikliklerinin çoğunluğu online
+              gerçekleştirilebilir.<br>
+              •Mesaj tabanlı bilgi servisleri dahil Ester ürünleri; Ester Güvenlik ve Güvenilirlik ölçütlerine uygun
+              olarak geliştirilir ve işletilir.<br>
+              •Ester Monitoring altyapısı ile uyumludur. Platformu oluşturan bileşenler ve servislere ilişkin sağlık
+              bilgileri ve performans sayaçları online izlenebilir.<br>
+              •Yüksek ayakta kalma oranı için bileşenlerinin ayrı ayrı açılması ve kapatılmasını destekler.<br>
+              •Test modu sayesinde güncelleme ve bakım süreleri azalır, işletim kalitesi ve süreklilik artar.<br>
+              •Ester sunucuları üzerinde konumlanan ürünler, Ester Operasyon ekibi tarafından izlenir ve bakımları
+              yapılır.<br>
+          </p>
+          <p>
+            <strong>Performans bilgileri</strong><br>
+            <em>İnteraktif / Katma Değerli Servisler;</em><br>
+            •Olağan yük altında ( Saatte 300.000 sorguya kadar ) (Diğer kurumların sistemlerinden bağımsız olarak)
+            yapılan sorguların yanıtlarını 15 sn. içerisinde operatör sistemlerine iletir.<br>
+            •Yük altında ( Saatte 500.000 sorguya kadar ) sorgu yanıtları en fazla 1.5 dk içerisinde operatör
+            sistemlerine iletilir.<br>
+            •Büyük yüklerde ( Saatte 1.000.000 sorgudan fazla ) sistem tutarlılığı ve sağlığı etkilenmez,üzerine
+            çalışılan sunucu donanımın performansına bağlı olarak işlevlerini sürdürür.<br>
+            •Günde 800.000'den fazla tahsilat işlemi gerçekleştirebilir.<br>
+          </p>
+          <p>
+            <strong>İnteraktif ya da Katma Değerli bir servis için bahsi edilen her bir ileti / gönderim işleminin
+              özellikleri;</strong><br>
+            <span style="padding-left: 30px;"></span>
+            •<em>(Gerektiğinde) SMS'ler için ücret tahsilatı yapılır.</em><br>
+            <span style="padding-left: 30px;"></span>
+            •<em>(Ücretli iletiler için) Tekrar eden işlemler için önceden tahsilat yapılıp yapılmadığı kontrol
+              edilir.</em><br>
+            <span style="padding-left: 30px;"></span>
+            •<em>Bağlantı problemleri vb. problemler için tanımlanan kurallar doğrultusunda yeniden gönderim
+              denenir.</em><br>
+            <span style="padding-left: 30px;"></span>
+            •<em>Başarısız tahsilatlar için parçalı ödeme ya da yeniden deneme kuralları çalıştırılır.</em><br>
+            <span style="padding-left: 30px;"></span>
+            •<em>Başarısız tahsilatlar karşılığında ilgili üyelikler dondurulabilir ya da kapatılabilir.</em><br>
+            <span style="padding-left: 30px;"></span>
+            •<em>Operatör değişikliği ihtimalleri analiz edilir ve tanımlanan geçiş işlemleri gerçekleştirilir.</em><br>
+            <span style="padding-left: 30px;"></span>
+            •<em>Operatör değişikliği ve abone isteğine göre üyelik kapatma işlemleri sonrasında yeniden davet
+              senaryoları çalıştırılır.</em><br>
+            <span style="padding-left: 30px;"></span>
+            •<em>GSM no değişikliği işlemleri gerçekleştirilir.</em><br>
+            <span style="padding-left: 30px;"></span>
+            •<em>SMS, WapPush ve MMS iletileri için izin veren operatör sistemleri için iletim raporu sorguları
+              oluşturulur.</em><br>
+            <span style="padding-left: 30px;"></span>
+            •<em>(Gerektiğinde) Operatör sistemleri üzerinde üyelik tanımlama / üyelik kapatma işlemleri
+              gerçekleştirilir.</em><br>
+            <span style="padding-left: 30px;"></span>
+            •<em>İleti özelliklerine göre ilgili abonenin tanıtım ya da iletim engeli (ban) kontrol edilir.</em><br>
+            <span style="padding-left: 30px;"></span>
+            •<em>İleti özelliklerine göre ilgili abonenin ücretsiz kullanım hakkı / bakiyesi kontrol edilir /
+              kullandırılır.</em><br>
+            <span style="padding-left: 30px;"></span>
+            •<em>İleti özelliklerinin ilgili operatör platformunun özelliklerine uygunluğu kontrol edilir.</em><br>
+            <span style="padding-left: 30px;"></span>
+            •<em>İletinin özelliğine göre, ilgili Katma Değerli Servisin gönderim zamanlamasına uyup uymadığı kontrol
+              edilir ve gerekir ise ileri bir tarihe taşınır ya da iptal edilir.</em><br>
+          </p>
+          <p>
+            <em>Mesaj Oluşturma / Gönderme performansı ;</em><br>
+            •Saatte 6.500.000 1eN SMS üretilebilir<br>
+            •Saatte 2.000.000 1e1 SMS üretilebilir<br>
+            •Operatör sistemlerine saatte 5.000.000 SMS devredebilir<br>
+          </p>
+          <p>
+            <em>*&nbsp;Mobimate Platformunun 2 x 4 Core Xeon 2.4 GHz CPU, 2 x 8 10k SAS HDD RAID 5, 6 x 15k SAS HDD RAID 5
+              dizileri üzerinde tek bir proses için çalışma değerleridir. Daha fazla performans gereksinimi olan
+              hallerde birden fazla proses çalıştırılabilir.</em><br>
+              <em>** Bağlanılan diğer sistemlerin performansı kısıtlayıcı olabilir</em><br>
+          </p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!--Start Footer-->
+  <section class="footer-section">
+    <div class="container3">
+      <div class="row2">
+        <div class="col" id="company">
+          <img src="images/footer-icon.svg" alt="" class="logo">
+          <p class="footer-title">
+            ESTER © 2019
+          </p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3>Adres</h3>
+          <p class="adres">Büyükdere Mah. Prof. Dr. Nabi Avcı Bulvarı Osmangazi Üni.<br> Meşelik Kampüsü ETGB - Osmangazi Teknopark
+            4/59 Z3-<br>Z4-Z5, 26040 Odunpazarı Eskişehir</p>
+        </div>
+
+        <div class="col" id="services">
+          <h3>POLİTİKALARIMIZ</h3>
+          <div class="links">
+            <a href="#">Bilgi Güvenliği Politikası</a>
+            <a href="#">Kişisel Verilerin Korunması Kanunu</a>
+            <a href="#">İleti Yönetim Sistemi</a>
+          </div>
+        </div>
+
+        <div class="col" id="contact">
+          <h3>İLETİŞİM</h3>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>Faks: 0 (222) 236 13 16</p>
+          </div>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>Tel: 0 (222) 236 13 10</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Footer-->
+
+
+
+
+
+</body>
+
+</html>

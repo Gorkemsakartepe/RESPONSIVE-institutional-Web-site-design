@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600&display=swap');
+
+.padding5 {
+  padding: 5px !important;
+}
+
+.height100 {
+  height: 100% !important;
+}
+
+.width100 {
+  width: 100% !important;
+}
+
+.fullPage {
+  padding-bottom: 30px;
+  padding-top: 20px;
+  min-height: calc(100vh - 250px);
+  width: 100%;
+  font-size: 14px;
+  background-color: #FFF;
+  color: #333;
+  line-height: 22px;
+}
+
+.div1 {
+  display: table;
+}
+
+.div2 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.div3 {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.square {
+  position: relative;
+  padding: 10px;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.indexImageBack {
+  text-align: center;
+  background-size: 90% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.indexImageBackBorder {
+  border: 1px solid #ccc;
+}
+
+.indexImageBackBorderS {
+  margin: 10px;
+  background-color: #fff;
+}
+
+
+.partnerBaslik {
+  color: #000;
+  height: 60px;
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  border-top: 1px solid #ddd;
+}
+
+.partnerLink {
+  background-color: #CE0011;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  height: 30px;
+}
+
+.partnerMetin {
+  color: #333;
+  font-size: 12px;
+  padding: 10px 0px;
+  border-top: 1px solid #ddd;
+}
+
+@media (max-width: 767px) {
+  .partnerBaslik {
+    font-size: 11px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .partnerMetin {
+    margin-top: 10px;
+    border-top: 0px;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-3 {
+    float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-2 {
+    float: left;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .col-sm-4 {
+    float: left;
+  }
+}
+
+
+.col-sm-4 {
+  width: 33.33333333%;
+}
+
+.col-md-3 {
+  float: left;
+}
+
+.col-md-3 {
+  width: 25%;
+}
+
+.col-lg-2,
+.col-md-3,
+.col-sm-4,
+.col-xs-6 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+.col-lg-2 {
+  float: left;
+}
+
+.col-lg-2 {
+  width: 16.66666667%;
+}
+
+.col-xs-6 {
+  float: left;
+}
+
+@media (max-width: 768px) {
+  .col-xs-6 {
+    width: 50%;
+  }
+}
+
+
+
+.padding5 {
+  padding: 5px !important;
+}
+
+.indexImageBack {
+  text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.refBorder {
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.square {
+  position: relative;
+  padding: 10px;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+
+
+
+.fullPage {
+  margin-top: 100px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+.indexImageBack {
+  text-align: center;
+  background-size: 90% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.indexImageBackBorder {
+  border: 1px solid #ccc;
+}
+
+.indexImageBackBorderS {
+  margin: 10px;
+  background-color: #fff;
+}
+
+
+.partnerBaslik {
+  color: #000;
+  height: 60px;
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  border-top: 1px solid #ddd;
+}
+
+.squarecropimg {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.squarecropimg:after {
+  content: "";
+  display: block;
+  padding-bottom: 65%;
+}

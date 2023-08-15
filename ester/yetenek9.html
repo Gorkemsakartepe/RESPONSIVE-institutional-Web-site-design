@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTER</title>
+  <script src="js/searchbox.js"></script>
+  <link rel="stylesheet" href="css/kurumsal.css">
+  <link href="css/bootstrap.css" rel="stylesheet" />
+
+  <script>
+    $(document).ready(function () {
+
+      var setState = function () {
+        if (length > yPos && width > xPos) {
+          //use the fixed sidebar state
+          $('#sidebar-fluid').hide();
+          $('#sidebar-fixed').show();
+        } else {
+          //use the fluid sidebar state
+          $('#sidebar-fluid').show();
+          $('#sidebar-fixed').hide();
+        }
+      }
+
+      var xPos = 683;
+      var yPos = 240;
+
+      var length = $(window).scrollTop();
+      var width = $(window).width();
+
+      $(window).scroll(function (event) {
+        length = $(window).scrollTop();
+        setState();
+      });
+
+      $(window).resize(function () {
+        width = $(window).width();
+        setState();
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container1">
+      <div class="header-main">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.svg"></a>
+        </div>
+        <div class="open-nav-menu">
+          <span></span>
+        </div>
+        <div class="menu-overlay">
+        </div>
+        <!-- navigation menu start -->
+        <nav class="nav-menu">
+          <div class="close-nav-menu">
+            <img src="images/close.svg" alt="close">
+          </div>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="index.html">ANASAYFA</a>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a href="kurumsal.html" data-toggle="sub-menu">KURUMSAL <i class="plus"></i></a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="kurumsal.html">HAKKIMIZDA</a></li>
+                <li class="menu-item"><a href="kalite.html">KALİTE</a></li>
+                <li class="menu-item"><a href="kvkk.html">KİŞİSEL VERİLERİN KORUNMASI KANUNU</a></li>
+                <li class="menu-item"><a href="yetenek.html">YETENEKLERİMİZ</a></li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a href="hizmetler.html" data-toggle="sub-menu">HİZMETLERİMİZ <i class="plus"></i></a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="bilgiservisleri.html">BİLGİ SERVİSLERİ</a></li>
+                <li class="menu-item"><a href="toplusms.html">TOPLU SMS</a></li>
+                <li class="menu-item"><a href="özelcözümler.html">ÖZEL ÇÖZÜMLER</a></li>
+                <li class="menu-item"><a href="mobilogren.html">MOBİLÖĞREN</a></li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="iys.html">İYS</a>
+            </li>
+            <li class="menu-item">
+              <a href="marka.html">MARKALARIMIZ</a>
+            </li>
+            <li class="menu-item">
+              <a href="referans.html">REFERANSLAR</a>
+            </li>
+            <li class="menu-item">
+              <a href="haber.html">HABERLER</a>
+            </li>
+            <li class="menu-item">
+              <a href="kariyer.html">KARİYER</a>
+            </li>
+            <li class="menu-item">
+              <a href="iletisim.html">İLETİŞİM</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navigation menu end -->
+      </div>
+    </div>
+    <script src="/js/script.js"></script>
+  </header>
+
+  <hr class="hr-top" />
+
+  <div class="container">
+    <div class="row">
+      <div class="three columns">
+        <aside>
+          <div id="sidebar-fluid">
+            <ul>
+              <li><a href="yetenek1.html">TÜM GSM OPERATÖRLERİNİN ÇÖZÜM ORTAĞI</a></li>
+              <li><a href="yetenek2.html">MOBİL ÇÖZÜMLER İÇİN UZMAN : ESTER</a></li>
+              <li><a href="yetenek3.html">KALİTE VE ÖLÇEKLENEBİLİRLİK</a></li>
+              <li><a href="yetenek4.html">WEB + CEP + GSM + BACK-END</a></li>
+              <li><a href="yetenek5.html">BİLGİ GÜVENLİĞİ ANLAYIŞI</a></li>
+              <li><a href="yetenek6.html">YÜKSEK İŞLETİM KALİTESİ İÇİN AYRI BİRİM : OPERASYON</a></li>
+              <li><a href="yetenek7.html">MÜŞTERİ HİZMETLERİ DESTEĞİ</a></li>
+              <li><a href="yetenek8.html">MOBİL HİZMETLER İÇİN UZMAN : MOBİMATE</a></li>
+              <li><a href="yetenek9.html">İZLEME İÇİN UZMAN : ESTER MONİTORİNG</a></li>
+            </ul>
+          </div>
+          <div id="sidebar-fixed">
+            <div class="panel-heading">KURUMSAL</div>
+            <ul>
+              <li><a href="kurumsal.html">Hakkımızda</a></li>
+              <li><a href="kalite.html">Kalite</a></li>
+              <li><a href="kvkk.html">Kişisel Verilerin Korunması<br> Kanunu</a></li>
+              <li><a href="yetenek.html">Yeteneklerimiz</a></li>
+            </ul>
+          </div>
+
+          <span id="placeholder">,</span>
+
+        </aside>
+      </div>
+
+      <div class="nine columns">
+        <main>
+          <h1>İZLEME İÇİN UZMAN : ESTER MONİTORİNG</h1>
+          <hr />
+          <p>
+            .Net ile geliştirilen ürünlerin bileşenlerinin sağlık bilgileri, oluşan uyarıların yayınlanması, işletim
+            sayaçları ve işletim kayıtlarının kolayca tek merkezde toplanabilmesi için gerekli altyapıyı sağlar.
+          </p>
+          <p>
+            İşlevi başlatılabilen ve durdurulabilen tüm bileşenler basit bir kalıtım uygulanarak Ester Monitoring
+            servisleri için bilgi üretebilir hale dönüştürülebilir. İzleme altyapısına katılmış bir bileşen;<br>
+            <span style="padding-left: 30px;"></span>
+            •&nbsp;Periyodik sağlık bilgisi yayınlar.<br>
+            <span style="padding-left: 30px;"></span>
+            •&nbsp;Üç ayrı seviyede uyarı yayınlayabilir. (Bilgi, uyarı, problem)<br>
+            <span style="padding-left: 30px;"></span>
+            •&nbsp;Dk.'da yapılan işlem sayısı, varlık durumları, kapasite miktarları vb. 16 ayrı türde sayaç bilgisi yayınlayabilir.<br>
+            <span style="padding-left: 30px;"></span>
+            •&nbsp;Log4Net için hazırlanmış appender'lar ile izleme sunucusuna işletim kayıtlarını ileride kullanılmak üzere iletebilir.<br>
+          </p>
+          <p>
+            Bileşen API'si dışında Windows servisi olarak çalışan Ester Monitoring Agent'ı sayesinde, üzerinde çalıştığı sistemin;<br>
+            <span style="padding-left: 30px;"></span>
+            •&nbsp;CPU yük miktarı<br>
+            <span style="padding-left: 30px;"></span>
+            •&nbsp;Boş bellek miktarı<br>
+            <span style="padding-left: 30px;"></span>
+            •&nbsp;Boş disk alanı (alanları) miktarı<br>
+          </p>
+          <p>
+            İzleme sayaçlarına gönderilir ve tanımlanan tetikleyiciler sayesinde kritik değerler aşıldığında uyarı üretilir.
+          </p>
+          <p>
+            İşletim sorumlusu (Ester'de Operasyon birimi) sistemin durumunu;<br>
+            <span style="padding-left: 30px;"></span>
+            •&nbsp;Özelleştirilebilir sayaç izleme ekranları<br>
+            <span style="padding-left: 30px;"></span>
+            •&nbsp;Uyarı listesi<br>
+            <span style="padding-left: 30px;"></span>
+            •&nbsp;Bileşen sağlık durumu ekranı<br>
+            <span style="padding-left: 30px;"></span>
+            •&nbsp;İşletim kaydı inceleme ekranı<br>
+            <span style="padding-left: 30px;"></span>
+            •&nbsp;UDP Log okuyucuları<br>
+            Araçlarını kullanarak izler ve gerektiğinde ayrıntılı inceleme gerçekleştirir.
+          </p>
+          <p>
+            Ester Monitoring, halihazırda günde 12.000.000'dan fazla işlemin kaydını tutmakta ve 200'den fazla bileşenin sayaç, sağlık değerlerini ve uyarılarını takip etmektedir.
+          </p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!--Start Footer-->
+  <section class="footer-section">
+    <div class="container3">
+      <div class="row2">
+        <div class="col" id="company">
+          <img src="images/footer-icon.svg" alt="" class="logo">
+          <p class="footer-title">
+            ESTER © 2019
+          </p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3>Adres</h3>
+          <p class="adres">Büyükdere Mah. Prof. Dr. Nabi Avcı Bulvarı Osmangazi Üni.<br> Meşelik Kampüsü ETGB - Osmangazi Teknopark
+            4/59 Z3-<br>Z4-Z5, 26040 Odunpazarı Eskişehir</p>
+        </div>
+
+        <div class="col" id="services">
+          <h3>POLİTİKALARIMIZ</h3>
+          <div class="links">
+            <a href="#">Bilgi Güvenliği Politikası</a>
+            <a href="#">Kişisel Verilerin Korunması Kanunu</a>
+            <a href="#">İleti Yönetim Sistemi</a>
+          </div>
+        </div>
+
+        <div class="col" id="contact">
+          <h3>İLETİŞİM</h3>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>Faks: 0 (222) 236 13 16</p>
+          </div>
+          <div class="contact-details">
+            <i class="fa fa-phone"></i>
+            <p>Tel: 0 (222) 236 13 10</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Footer-->
+
+
+
+
+
+</body>
+
+</html>
